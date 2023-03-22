@@ -1,4 +1,3 @@
-# cuantica
 # Introducción a computación cuántica 
 
 > Se ha realizado la ejecución de un problema en computación cuántica basado en Grover Optimizer 
