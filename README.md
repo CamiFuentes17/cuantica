@@ -33,6 +33,20 @@ Una vez que estés lista, sigue las instrucciones de la documentación que revis
    ```
    ![image](https://user-images.githubusercontent.com/26396833/226799046-4f572097-9566-4fb3-8391-9c50b6429e55.png)
 
+El código que se muestra importa diferentes módulos y clases necesarias para resolver problemas de optimización cuántica utilizando Qiskit.
+
+En primer lugar, se importa la clase NumPyMinimumEigensolver del módulo qiskit.algorithms.minimum_eigensolvers. Esta clase proporciona un solucionador mínimo de autovalores utilizando el paquete NumPy. Esta clase se utiliza para resolver el problema de autovalores mínimo que se encuentra al resolver el problema de optimización cuántica.
+
+A continuación, se importa la clase Sampler del módulo qiskit.primitives. Esta clase se utiliza para generar muestras de un circuito cuántico. En el contexto de la optimización cuántica, esto se utiliza para estimar la función de costo de un problema de optimización cuántica.
+
+Luego, se importa la clase GroverOptimizer del módulo qiskit_optimization.algorithms. Esta clase implementa el algoritmo de Grover para resolver problemas de optimización cuántica. El algoritmo de Grover es un algoritmo de búsqueda cuántica que se utiliza para encontrar la solución óptima de un problema de optimización cuántica.
+
+A continuación, se importa la clase MinimumEigenOptimizer del módulo qiskit_optimization.algorithms. Esta clase utiliza un solucionador de autovalores mínimo para resolver problemas de optimización cuántica.
+
+Luego, se importa la función from_docplex_mp del módulo qiskit_optimization.translators. Esta función se utiliza para convertir modelos de optimización lineal y entera de CPLEX de IBM en un objeto QuadraticProgram de Qiskit que puede ser utilizado para resolver problemas de optimización cuántica.
+
+Finalmente, se importa la clase Model del módulo docplex.mp.model. Esta clase se utiliza para definir modelos de optimización lineal y entera utilizando la sintaxis de la librería CPLEX de IBM.
+
 2. Esperamos que no genere errores para continuar , enviamos la otra parte y el resultado debe ser el mismo que en el documento
    ```
    model = Model()
