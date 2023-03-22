@@ -65,6 +65,13 @@ Finalmente, se importa la clase Model del módulo docplex.mp.model. Esta clase s
    results = grover_optimizer.solve(qp)
    print(results.prettyprint())
    ```
+   
+   comienza creando una instancia de la clase GroverOptimizer. GroverOptimizer es un algoritmo de búsqueda cuántica que utiliza el algoritmo de Grover para buscar en una lista no ordenada de elementos y encontrar la solución óptima. En este caso, se especifica que se utilizarán 6 qubits y que se realizarán 10 iteraciones del algoritmo de Grover.
+
+Luego, la instancia de GroverOptimizer llama al método "solve" y pasa el objeto de problema cuántico "qp" como argumento. Este objeto se crea utilizando la función "from_docplex_mp" que se importó anteriormente. Esta función toma una instancia de un modelo de Docplex y lo convierte en un problema cuántico, que es lo que se necesita para resolver problemas de optimización cuántica.
+
+Por último, los resultados del problema cuántico se imprimen utilizando el método "prettyprint". Esto mostrará la solución óptima encontrada para el problema cuántico en un formato legible para el usuario.
+
    ![image](https://user-images.githubusercontent.com/26396833/226799522-604d6683-f2f8-4c38-acab-d3e0b3c06680.png)
 
 
@@ -82,6 +89,12 @@ Finalmente, se importa la clase Model del módulo docplex.mp.model. Esta clase s
    %qiskit_version_table
    %qiskit_copyright
    ```
+   Estos comandos son utilizados en el entorno de Jupyter Notebook para obtener información sobre la versión de Qiskit instalada y mostrar el aviso de derechos de autor de Qiskit.
+
+El comando %qiskit_version_table muestra una tabla con información detallada sobre la versión actual de los paquetes de Qiskit instalados, incluyendo el nombre del paquete, la versión, la ubicación del archivo, la versión de Python compatible y la fecha de lanzamiento.
+
+El comando %qiskit_copyright muestra el aviso de derechos de autor de Qiskit. Este comando es útil para saber los términos y condiciones de uso de la biblioteca de Qiskit y sus paquetes.
+   
    ![image](https://user-images.githubusercontent.com/26396833/226799704-92b69af0-5f4d-43d5-b97c-8a3460611505.png)
 
 ## Conclusión
@@ -90,7 +103,7 @@ Por ultimo cabe mencionar que como pudimos demostrar en  este proceso, qiskit es
  
 Solo para aclarar que la sección de optimización contiene múltiples proyectos para realizar el ejercicio que estamos haciendo en este caso (optimización con Qiskit), cómo funciona Vehicle Routing en este caso Ejecute un proceso para verificar si vincula 
  
-El propósito de este método es lo que sea que haga Esto se hace en base a un algoritmo híbrido alternativo de computadora cuántica con resultados adicionales. se visualiza. 
+ Esto se hace en base a un algoritmo híbrido alternativo de computadora cuántica con resultados adicionales. se visualiza. 
  
 Qiskit realiza esto comparando y mejorando a través de modelos matemáticos y cuánticos. 
  
